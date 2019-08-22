@@ -15,12 +15,11 @@ greeting = 'Hello'
 my_name = 'david'
 my_age = 26
 
-# welcome_text = 'Hello '+fname+ ' ' + lname + ' from ' + city + '!!!'
 welcome_text = f'{greeting} I hear that you are {my_age} today '
 
 
 
-print(welcome_text)
+# print(welcome_text)
 
 ### Problem 2:
 # Write some Python code that asks the user for a secret password.
@@ -48,17 +47,18 @@ print(welcome_text)
 # .
 # ```
 for idx in range(0, 51, 1):
-    print(idx, idx, idx)
+    # number_text = f'{idx} {idx} {idx} '
 
+    print(idx, idx, idx)
 ### Problem 4:
 # Write some Python code that create a random number and stores it in a variable.
 # Ask the user to guess the random number.
 # Keep letting the user guess until they get it right, then quit.
-randomNumber = random.randint(1, 10)
-userGuess = ''
-while (userGuess != randomNumber):
-    userGuess = int(input("Enter a number "))
-    if(userGuess == randomNumber):
-        print("success")
-    else:
-        userGuess = int(input("sorry incorrect "))
+# randomNumber = random.randint(1, 10)
+# userGuess = ''
+# while (userGuess != randomNumber):
+#     userGuess = int(input("Enter a number "))
+#     if(userGuess == randomNumber):
+#         print("success")
+#     else:
+#         userGuess = int(input("sorry incorrect "))
