@@ -46,10 +46,8 @@ welcome_text = f'{greeting} I hear that you are {my_age} today '
 # .
 # .
 # ```
-for idx in range(0, 51, 1):
-    # number_text = f'{idx} {idx} {idx} '
-
-    print(idx, idx, idx)
+# for idx in range(0, 51, 1):
+#     print(`f{idx}, {idx}, {idx}`)
 ### Problem 4:
 # Write some Python code that create a random number and stores it in a variable.
 # Ask the user to guess the random number.
@@ -62,3 +60,13 @@ for idx in range(0, 51, 1):
 #         print("success")
 #     else:
 #         userGuess = int(input("sorry incorrect "))
+
+
+
+secretNumber = random.randint(1, 10000)
+print(f'{secretNumber}')
+
+while secretNumber != computerGuess:
+    computerGuess = random.randint(1, 10000)
+    if computerGuess == secretNumber:
+        print(f'Computer guessed the number {computerGuess} correctly!')
